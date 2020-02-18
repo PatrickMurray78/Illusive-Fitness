@@ -41,6 +41,13 @@
     width: 3%;
     top: 22.5%;
     right: 65%;
+    opacity: 0;
+}
+
+#front-trap-a:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #front-trap-b {
@@ -48,6 +55,13 @@
     width: 3%;
     top: 22.5%;
     right: 61.1%;
+    opacity: 0;
+}
+
+#front-trap-b:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #front-delt-a {
@@ -55,6 +69,13 @@
     width: 4.5%;
     top: 27.3%;
     right: 67.1%;
+    opacity: 0;
+}
+
+#front-delt-a:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #front-delt-b {
@@ -62,6 +83,13 @@
     width: 4.5%;
     top: 27.4%;
     right: 57.3%;
+    opacity: 0;
+}
+
+#front-delt-b:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #pecs {
@@ -69,6 +97,13 @@
     width: 10.5%;
     top: 28.5%;
     right: 59.2%;
+    opacity: 0;
+}
+
+#pecs:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #left-bicep {
@@ -76,6 +111,13 @@
     width: 3.3%;
     top: 34.7%;
     right: 69.2%;
+    opacity: 0;
+}
+
+#left-bicep:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #right-bicep {
@@ -83,6 +125,13 @@
     width: 3.3%;
     top: 34.7%;
     right: 56.4%;
+    opacity: 0;
+}
+
+#right-bicep:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #front-forearm-a {
@@ -90,6 +139,13 @@
     width: 5.5%;
     top: 43%;
     right: 70.45%;
+    opacity: 0;
+}
+
+#front-forearm-a:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #front-forearm-b {
@@ -97,6 +153,13 @@
     width: 5.5%;
     top: 43%;
     right: 53.05%;
+    opacity: 0;
+}
+
+#front-forearm-b:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #obliques {
@@ -104,6 +167,13 @@
     width: 5.2%;
     top: 36.9%;
     right: 62%;
+    opacity: 0;
+}
+
+#obliques:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #left-quad {
@@ -111,6 +181,13 @@
     width: 5.3%;
     top: 53.7%;
     right: 65%;
+    opacity: 0;
+}
+
+#left-quad:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #right-quad {
@@ -118,6 +195,13 @@
     width: 5.3%;
     top: 53.7%;
     right: 58.65%;
+    opacity: 0;
+}
+
+#right-quad:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #front-calf-a {
@@ -125,6 +209,13 @@
     width: 3.8%;
     top: 81.7%;
     right: 66.8%;
+    opacity: 0;
+}
+
+#front-calf-a:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #front-calf-b {
@@ -132,6 +223,13 @@
     width: 3.8%;
     top: 81.7%;
     right: 58.32%;
+    opacity: 0;
+}
+
+#front-calf-b:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #back-trap-a {
@@ -139,6 +237,13 @@
     width: 6%;
     top: 20.2%;
     right: 29.05%;
+    opacity: 0;
+}
+
+#back-trap-a:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #back-trap-b {
@@ -146,6 +251,13 @@
     width: 6.5%;
     top: 23.5%;
     right: 28.75%;
+    opacity: 0;
+}
+
+#back-trap-b:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #left-lats {
@@ -153,6 +265,13 @@
     width: 4.8%;
     top: 34.5%;
     right: 32.2%;
+    opacity: 0;
+}
+
+#left-lats:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #right-lats {
@@ -160,6 +279,13 @@
     width: 4.8%;
     top: 34.5%;
     right: 26.95%;
+    opacity: 0;
+}
+
+#right-lats:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #back-delt-a {
@@ -167,6 +293,13 @@
     width: 4.5%;
     top: 25.2%;
     right: 35.05%;
+    opacity: 0;
+}
+
+#back-delt-a:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #back-delt-b {
@@ -174,6 +307,13 @@
     width: 4.5%;
     top: 25.25%;
     right: 24.45%;
+    opacity: 0;
+}
+
+#back-delt-b:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #left-tricep {
@@ -181,6 +321,13 @@
     width: 3.7%;
     top: 32%;
     right: 37%;
+    opacity: 0;
+}
+
+#left-tricep:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #right-tricep {
@@ -188,6 +335,13 @@
     width: 3.7%;
     top: 32%;
     right: 23.25%;
+    opacity: 0;
+}
+
+#right-tricep:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #back-forearm-a {
@@ -195,6 +349,13 @@
     width: 5.2%;
     top: 43.2%;
     right: 38.85%;
+    opacity: 0;
+}
+
+#back-forearm-a:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #back-forearm-b {
@@ -202,6 +363,13 @@
     width: 5.2%;
     top: 43.2%;
     right: 19.95%;
+    opacity: 0;
+}
+
+#back-forearm-b:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #glutes {
@@ -209,6 +377,13 @@
     width: 9.8%;
     top: 52.2%;
     right: 27.08%;
+    opacity: 0;
+}
+
+#glutes:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #left-hamstring {
@@ -216,6 +391,13 @@
     width: 5.4%;
     top: 60.3%;
     right: 32.4%;
+    opacity: 0;
+}
+
+#left-hamstring:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #right-hamstring {
@@ -223,6 +405,13 @@
     width: 5.4%;
     top: 60.45%;
     right: 26.15%;
+    opacity: 0;
+}
+
+#right-hamstring:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #back-calf-a {
@@ -230,6 +419,13 @@
     width: 3.8%;
     top: 81.6%;
     right: 35.4%;
+    opacity: 0;
+}
+
+#back-calf-a:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #back-calf-b {
@@ -237,4 +433,12 @@
     width: 3.8%;
     top: 81.6%;
     right: 24.8%;
+    opacity: 0;
 }
+
+#back-calf-b:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
+}
+
