@@ -1,0 +1,240 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    background-color: black;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    top: -20px;
+    text-align: center;
+}
+
+#illusiveheader {
+    color: white;
+    display: inline-block;
+    font-size: 250%;
+}
+
+#fitnessheader {
+    color: red;
+    display: inline-block;
+    font-size: 150%;
+}
+
+#muscles {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+#background {
+    position: absolute;
+    right: 8.5%;
+    width: 80vw;
+}
+
+#front-trap-a {
+    position: absolute;
+    width: 3%;
+    top: 22.5%;
+    right: 65%;
+}
+
+#front-trap-b {
+    position: absolute;
+    width: 3%;
+    top: 22.5%;
+    right: 61.1%;
+}
+
+#front-delt-a {
+    position: absolute;
+    width: 4.5%;
+    top: 27.3%;
+    right: 67.1%;
+}
+
+#front-delt-b {
+    position: absolute;
+    width: 4.5%;
+    top: 27.4%;
+    right: 57.3%;
+}
+
+#pecs {
+    position: absolute;
+    width: 10.5%;
+    top: 28.5%;
+    right: 59.2%;
+}
+
+#left-bicep {
+    position: absolute;
+    width: 3.3%;
+    top: 34.7%;
+    right: 69.2%;
+}
+
+#right-bicep {
+    position: absolute;
+    width: 3.3%;
+    top: 34.7%;
+    right: 56.4%;
+}
+
+#front-forearm-a {
+    position: absolute;
+    width: 5.5%;
+    top: 43%;
+    right: 70.45%;
+}
+
+#front-forearm-b {
+    position: absolute;
+    width: 5.5%;
+    top: 43%;
+    right: 53.05%;
+}
+
+#obliques {
+    position: absolute;
+    width: 5.2%;
+    top: 36.9%;
+    right: 62%;
+}
+
+#left-quad {
+    position: absolute;
+    width: 5.3%;
+    top: 53.7%;
+    right: 65%;
+}
+
+#right-quad {
+    position: absolute;
+    width: 5.3%;
+    top: 53.7%;
+    right: 58.65%;
+}
+
+#front-calf-a {
+    position: absolute;
+    width: 3.8%;
+    top: 81.7%;
+    right: 66.8%;
+}
+
+#front-calf-b {
+    position: absolute;
+    width: 3.8%;
+    top: 81.7%;
+    right: 58.32%;
+}
+
+#back-trap-a {
+    position: absolute;
+    width: 6%;
+    top: 20.2%;
+    right: 29.05%;
+}
+
+#back-trap-b {
+    position: absolute;
+    width: 6.5%;
+    top: 23.5%;
+    right: 28.75%;
+}
+
+#left-lats {
+    position: absolute;
+    width: 4.8%;
+    top: 34.5%;
+    right: 32.2%;
+}
+
+#right-lats {
+    position: absolute;
+    width: 4.8%;
+    top: 34.5%;
+    right: 26.95%;
+}
+
+#back-delt-a {
+    position: absolute;
+    width: 4.5%;
+    top: 25.2%;
+    right: 35.05%;
+}
+
+#back-delt-b {
+    position: absolute;
+    width: 4.5%;
+    top: 25.25%;
+    right: 24.45%;
+}
+
+#left-tricep {
+    position: absolute;
+    width: 3.7%;
+    top: 32%;
+    right: 37%;
+}
+
+#right-tricep {
+    position: absolute;
+    width: 3.7%;
+    top: 32%;
+    right: 23.25%;
+}
+
+#back-forearm-a {
+    position: absolute;
+    width: 5.2%;
+    top: 43.2%;
+    right: 38.85%;
+}
+
+#back-forearm-b {
+    position: absolute;
+    width: 5.2%;
+    top: 43.2%;
+    right: 19.95%;
+}
+
+#glutes {
+    position: absolute;
+    width: 9.8%;
+    top: 52.2%;
+    right: 27.08%;
+}
+
+#left-hamstring {
+    position: absolute;
+    width: 5.4%;
+    top: 60.3%;
+    right: 32.4%;
+}
+
+#right-hamstring {
+    position: absolute;
+    width: 5.4%;
+    top: 60.45%;
+    right: 26.15%;
+}
+
+#back-calf-a {
+    position: absolute;
+    width: 3.8%;
+    top: 81.6%;
+    right: 35.4%;
+}
+
+#back-calf-b {
+    position: absolute;
+    width: 3.8%;
+    top: 81.6%;
+    right: 24.8%;
+}
