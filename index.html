@@ -17,40 +17,184 @@
         <div id="muscles">
             <!-- Front Body Pics -->
             <img id="background" src="pics/malebody.png">
-            <img id="front-trap-a" src="pics/frontbody/lefttrap.png">
-            <img id="front-trap-b" src="pics/frontbody/righttrap.png">
-            <img id="front-delt-a" src="pics/frontbody/leftdeltoid.png">
-            <img id="front-delt-b" src="pics/frontbody/rightdeltoid.png">
-            <img id="pecs" src="pics/frontbody/pecs.png">
-            <img id="left-bicep" src="pics/frontbody/leftbicep.png">
-            <img id="right-bicep" src="pics/frontbody/rightbicep.png">
-            <img id="front-forearm-a" src="pics/frontbody/leftforearm.png">
-            <img id="front-forearm-b" src="pics/frontbody/rightforearm.png">
-            <img id="obliques" src="pics/frontbody/obliques.png">
-            <img id="left-quad" src="pics/frontbody/leftquad.png">
-            <img id="right-quad" src="pics/frontbody/rightquad.png">
-            <img id="front-calf-a" src="pics/frontbody/leftcalves.png">
-            <img id="front-calf-b" src="pics/frontbody/rightcalves.png">
+            <img id="front-trap-a" src="pics/frontbody/lefttrap.png" onclick="showPopup(this.id)">
+            <img id="front-trap-b" src="pics/frontbody/righttrap.png" onclick="showPopup(this.id)">
+            <img id="front-delt-a" src="pics/frontbody/leftdeltoid.png" onclick="showPopup(this.id)">
+            <img id="front-delt-b" src="pics/frontbody/rightdeltoid.png" onclick="showPopup(this.id)">
+            <img id="pecs" src="pics/frontbody/pecs.png" onclick="showPopup(this.id)">
+            <img id="left-bicep" src="pics/frontbody/leftbicep.png" onclick="showPopup(this.id)">
+            <img id="right-bicep" src="pics/frontbody/rightbicep.png" onclick="showPopup(this.id)">
+            <img id="front-forearm-a" src="pics/frontbody/leftforearm.png" onclick="showPopup(this.id)">
+            <img id="front-forearm-b" src="pics/frontbody/rightforearm.png" onclick="showPopup(this.id)">
+            <img id="obliques" src="pics/frontbody/obliques.png" onclick="showPopup(this.id)">
+            <img id="left-quad" src="pics/frontbody/leftquad.png" onclick="showPopup(this.id)">
+            <img id="right-quad" src="pics/frontbody/rightquad.png" onclick="showPopup(this.id)">
+            <img id="front-calf-a" src="pics/frontbody/leftcalves.png" onclick="showPopup(this.id)">
+            <img id="front-calf-b" src="pics/frontbody/rightcalves.png" onclick="showPopup(this.id)">
 
             <!-- Back Body Pics -->
-            <img id="back-trap-a" src="pics/backbody/trapsa.png">
-            <img id="back-trap-b" src="pics/backbody/trapsb.png">
-            <img id="left-lats" src="pics/backbody/leftlats.png">
-            <img id="right-lats" src="pics/backbody/rightlats.png">
-            <img id="back-delt-a" src="pics/backbody/leftdelt.png">
-            <img id="back-delt-b" src="pics/backbody/rightdelt.png">
-            <img id="left-tricep" src="pics/backbody/lefttricep.png">
-            <img id="right-tricep" src="pics/backbody/righttricep.png">
-            <img id="back-forearm-a" src="pics/backbody/leftforearm.png">
-            <img id="back-forearm-b" src="pics/backbody/rightforearm.png">
-            <img id="glutes" src="pics/backbody/glutes.png">            <img id="left-hamstring" src="pics/backbody/lefthamstring.png">
-            <img id="right-hamstring" src="pics/backbody/righthamstring.png">
-            <img id="back-calf-a" src="pics/backbody/leftcalves.png">
-            <img id="back-calf-b" src="pics/backbody/rightcalves.png"> 
+            <img id="back-trap-a" src="pics/backbody/trapsa.png" onclick="showPopup(this.id)">
+            <img id="back-trap-b" src="pics/backbody/trapsb.png" onclick="showPopup(this.id)">
+            <img id="left-lats" src="pics/backbody/leftlats.png" onclick="showPopup(this.id)">
+            <img id="right-lats" src="pics/backbody/rightlats.png" onclick="showPopup(this.id)">
+            <img id="back-delt-a" src="pics/backbody/leftdelt.png" onclick="showPopup(this.id)">
+            <img id="back-delt-b" src="pics/backbody/rightdelt.png" onclick="showPopup(this.id)">
+            <img id="left-tricep" src="pics/backbody/lefttricep.png" onclick="showPopup(this.id)">
+            <img id="right-tricep" src="pics/backbody/righttricep.png" onclick="showPopup(this.id)">
+            <img id="back-forearm-a" src="pics/backbody/leftforearm.png" onclick="showPopup(this.id)">
+            <img id="back-forearm-b" src="pics/backbody/rightforearm.png" onclick="showPopup(this.id)">
+            <img id="glutes" src="pics/backbody/glutes.png" onclick="showPopup(this.id)">            
+            <img id="left-hamstring" src="pics/backbody/lefthamstring.png" onclick="showPopup(this.id)">
+            <img id="right-hamstring" src="pics/backbody/righthamstring.png" onclick="showPopup(this.id)">
+            <img id="back-calf-a" src="pics/backbody/leftcalves.png" onclick="showPopup(this.id)">
+            <img id="back-calf-b" src="pics/backbody/rightcalves.png" onclick="showPopup(this.id)"> 
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 id="muscle-type"></h2>
+                </div>
+                <div class="modal-body">
+                    <p>These workouts work best for this muscle</p>
+                    <p>Exercise 1</p>
+                    <p>Exercise 2</p>
+                    <p>Exercise 3</p>
+                </div>
+                <div class="modal-footer">
+                    <h3>Illusive Fitness</h3>
+                </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <footer>
         <h4>©Illusive 2020</h4>
     </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the muscle that was clicked
+        //var muscle = document.getElementById(this);
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        //btn.onclick = function() {
+        function showPopup(muscle) {
+          var muscleType = document.getElementById("muscle-type");
+          var a;
+          modal.style.display = "block";
+          switch (muscle) 
+          {
+            case 'front-trap-a':
+                muscleType.textContent = 'Traps';
+                break;
+            case 'front-trap-b':
+                muscleType.textContent = 'Traps';
+                break;
+            case 'front-delt-a':
+                muscleType.textContent = 'Shoulders';
+                break;
+            case 'front-delt-b':
+                muscleType.textContent = 'Shoulders';
+                break;
+            case 'pecs':
+                muscleType.textContent = 'Pecs';
+                break;
+            case 'left-bicep':
+                muscleType.textContent = 'Biceps';
+                break;
+            case 'right-bicep':
+                muscleType.textContent = 'Biceps';
+                break;
+            case 'front-forearm-a':
+                muscleType.textContent = 'Forearms';
+                break;
+            case 'front-forearm-b':
+                muscleType.textContent = 'Forearms';
+                break;
+            case 'obliques':
+                muscleType.textContent = 'Obliques';
+                break;
+            case 'left-quad':
+                muscleType.textContent = 'Quads';
+                break;
+            case 'right-quad':
+                muscleType.textContent = 'Quads';
+                break;
+            case 'front-calf-a':
+                muscleType.textContent = 'Calves';
+                break;
+            case 'front-calf-b':
+                muscleType.textContent = 'Calves';
+                break;
+
+            case 'back-trap-a':
+                muscleType.textContent = 'Traps';
+                break;
+            case 'back-trap-b':
+                muscleType.textContent = 'Traps (Mid-Back)';
+                break;
+            case 'left-lats':
+                muscleType.textContent = 'Lats';
+                break;
+            case 'right-lats':
+                muscleType.textContent = 'Lats';
+                break;
+            case 'back-delt-a':
+                muscleType.textContent = 'Shoulders';
+                break;
+            case 'back-delt-b':
+                muscleType.textContent = 'Shoulders';
+                break;
+            case 'left-tricep':
+                muscleType.textContent = 'Triceps';
+                break;
+            case 'right-tricep':
+                muscleType.textContent = 'Triceps';
+                break;
+            case 'back-forearm-a':
+                muscleType.textContent = 'Forearms';
+                break;
+            case 'back-forearm-b':
+                muscleType.textContent = 'Forearms';
+                break;
+            case 'glutes':
+                muscleType.textContent = 'Glutes';
+                break;
+            case 'left-hamstring':
+                muscleType.textContent = 'Hamstring';
+                break;
+            case 'right-hamstring':
+                muscleType.textContent = 'Hamstring';
+                break;
+            case 'back-calf-a':
+                muscleType.textContent = 'Calves';
+                break;
+            case 'back-calf-b':
+                muscleType.textContent = 'Calves';
+                break;
+                    
+          }
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </body>
 </html>
