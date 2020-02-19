@@ -53,22 +53,23 @@
             <div id="myModal" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2 id="muscle-type"></h2>
-                </div>
-                <div class="modal-body">
-                    <p>These workouts work best for this muscle</p>
-                    <p>Exercise 1</p>
-                    <p>Exercise 2</p>
-                    <p>Exercise 3</p>
-                </div>
-                <div class="modal-footer">
-                    <h3>Illusive Fitness</h3>
-                </div>
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2 id="muscle-type"></h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>These workouts work best for this muscle</p>
+                        <a id="workout1"></a>
+                        <a id="workout2"></a>
+                        <a id="workout3"></a>
+                        <a id="workout4"></a>
+                        <a id="workout5"></a>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Illusive Fitness</h3>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
     <footer>
@@ -78,109 +79,408 @@
         // Get the modal
         var modal = document.getElementById("myModal");
         
-        // Get the muscle that was clicked
-        //var muscle = document.getElementById(this);
-
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
         
         // When the user clicks the button, open the modal 
-        //btn.onclick = function() {
         function showPopup(muscle) {
           var muscleType = document.getElementById("muscle-type");
           var a;
           modal.style.display = "block";
+          document.getElementById("workout1").innerHTML = '';
+          document.getElementById("workout2").innerHTML = '';
+          document.getElementById("workout3").innerHTML = '';
+          document.getElementById("workout4").innerHTML = '';
+          document.getElementById("workout5").innerHTML = '';
           switch (muscle) 
           {
             case 'front-trap-a':
-                muscleType.textContent = 'Traps';
+                muscleType.innerHTML = 'Traps';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Seated Dumbell Shrugs";
+                a.href = "https://youtu.be/2mp7RQm74G0";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Standing Smith Machine Shrugs";
+                a.href = "https://www.youtube.com/watch?v=137KPCKrG88";
                 break;
             case 'front-trap-b':
-                muscleType.textContent = 'Traps';
+                muscleType.innerHTML = 'Traps';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Seated Dumbell Shrugs";
+                a.href = "https://youtu.be/2mp7RQm74G0";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Standing Smith Machine Shrugs";
+                a.href = "https://www.youtube.com/watch?v=137KPCKrG88";
                 break;
             case 'front-delt-a':
-                muscleType.textContent = 'Shoulders';
+                muscleType.innerHTML = 'Shoulders';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Seated Dumbell Shoulder Press";
+                a.href = "https://youtu.be/0JfYxMRsUCQ";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Side Lateral Raise";
+                a.href = "https://youtu.be/3VcKaXpzqRo?t=15";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout3');
+                a.innerHTML = "Dumbell Bent-Over Raise";
+                a.href = "https://youtu.be/ttvfGg9d76c?t=10";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout4');
+                a.innerHTML = "Arnold Press";
+                a.href = "https://youtu.be/3ml7BH7mNwQ";
+                a.target = '_blank';
                 break;
             case 'front-delt-b':
-                muscleType.textContent = 'Shoulders';
+            muscleType.innerHTML = 'Shoulders';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Seated Dumbell Shoulder Press";
+                a.href = "https://youtu.be/0JfYxMRsUCQ";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Side Lateral Raise";
+                a.href = "https://youtu.be/3VcKaXpzqRo?t=15";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout3');
+                a.innerHTML = "Dumbell Bent-Over Raise";
+                a.href = "https://youtu.be/ttvfGg9d76c?t=10";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout4');
+                a.innerHTML = "Arnold Press";
+                a.href = "https://youtu.be/3ml7BH7mNwQ";
+                a.target = '_blank';
                 break;
             case 'pecs':
-                muscleType.textContent = 'Pecs';
+                muscleType.innerHTML = 'Pecs';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Bench Press";
+                a.href = "https://youtu.be/rT7DgCr-3pg?t=10";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Dumbell Flys";
+                a.href = "https://youtu.be/kfTgKkZJnIQ";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout3');
+                a.innerHTML = "Incline Dumbell Press";
+                a.href = "https://youtu.be/8iPEnn-ltC8?t=10";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout4');
+                a.innerHTML = "Low Cable Chest Fly";
+                a.href = "https://youtu.be/M1N804yWA-8?t=16";
+                a.target = '_blank';
                 break;
             case 'left-bicep':
-                muscleType.textContent = 'Biceps';
+                muscleType.innerHTML = 'Biceps';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Barbell Curl";
+                a.href = "https://youtu.be/FAEWpmb9YQs";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Preacher Curl";
+                a.href = "https://youtu.be/1-xvtHS9PsU";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout3');
+                a.innerHTML = "Hammer Curl";
+                a.href = "https://youtu.be/zC3nLlEvin4?t=15";
+                a.target = '_blank';
                 break;
             case 'right-bicep':
-                muscleType.textContent = 'Biceps';
+                muscleType.innerHTML = 'Biceps';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Barbell Curl";
+                a.href = "https://youtu.be/FAEWpmb9YQs";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Preacher Curl";
+                a.href = "https://youtu.be/1-xvtHS9PsU";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout3');
+                a.innerHTML = "Hammer Curl";
+                a.href = "https://youtu.be/zC3nLlEvin4?t=15";
+                a.target = '_blank';
                 break;
             case 'front-forearm-a':
-                muscleType.textContent = 'Forearms';
+                muscleType.innerHTML = 'Forearms';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Farmers Walk";
+                a.href = "ttps://youtu.be/Fkzk_RqlYig";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Wrist Curls";
+                a.href = "https://youtu.be/qMtmHwaCmYI?t=10";
+                a.target = '_blank';
                 break;
             case 'front-forearm-b':
-                muscleType.textContent = 'Forearms';
+                muscleType.innerHTML = 'Forearms';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Farmers Walk";
+                a.href = "ttps://youtu.be/Fkzk_RqlYig";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Wrist Curls";
+                a.href = "https://youtu.be/qMtmHwaCmYI?t=10";
+                a.target = '_blank';
                 break;
             case 'obliques':
-                muscleType.textContent = 'Obliques';
+                muscleType.innerHTML = 'Obliques';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Crunches";
+                a.href = "https://youtu.be/MKmrqcoCZ-M";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Plank";
+                a.href = "https://youtu.be/pSHjTRCQxIw?t=3";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout3');
+                a.innerHTML = "Russian Twist";
+                a.href = "https://youtu.be/wkD8rjkodUI";
+                a.target = '_blank';
                 break;
             case 'left-quad':
-                muscleType.textContent = 'Quads';
+                muscleType.innerHTML = 'Quads';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Squat";
+                a.href = "https://youtu.be/nEQQle9-0NA";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Leg Press";
+                a.href = "https://youtu.be/IZxyjW7MPJQ";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout3');
+                a.innerHTML = "Leg Extension";
+                a.href = "https://youtu.be/YyvSfVjQeL0";
+                a.target = '_blank';
                 break;
             case 'right-quad':
-                muscleType.textContent = 'Quads';
+                muscleType.innerHTML = 'Quads';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Squat";
+                a.href = "https://youtu.be/nEQQle9-0NA";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Leg Press";
+                a.href = "https://youtu.be/IZxyjW7MPJQ";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout3');
+                a.innerHTML = "Leg Extension";
+                a.href = "https://youtu.be/YyvSfVjQeL0";
+                a.target = '_blank';
                 break;
             case 'front-calf-a':
-                muscleType.textContent = 'Calves';
+                muscleType.innerHTML = 'Calves';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Standing Calf Raises";
+                a.href = "https://youtu.be/YMmgqO8Jo-k?t=15";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Seated Calf Raises";
+                a.href = "https://youtu.be/E4ktXrJZUMg";
+                a.target = '_blank';
                 break;
             case 'front-calf-b':
-                muscleType.textContent = 'Calves';
+                muscleType.innerHTML = 'Calves';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Standing Calf Raises";
+                a.href = "https://youtu.be/YMmgqO8Jo-k?t=15";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Seated Calf Raises";
+                a.href = "https://youtu.be/E4ktXrJZUMg";
+                a.target = '_blank';
                 break;
 
             case 'back-trap-a':
-                muscleType.textContent = 'Traps';
+                muscleType.innerHTML = 'Traps';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Seated Dumbell Shrugs";
+                a.href = "https://youtu.be/2mp7RQm74G0";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Standing Smith Machine Shrugs";
+                a.href = "https://www.youtube.com/watch?v=137KPCKrG88";
                 break;
             case 'back-trap-b':
-                muscleType.textContent = 'Traps (Mid-Back)';
+                muscleType.innerHTML = 'Traps (Mid-Back)';
                 break;
             case 'left-lats':
-                muscleType.textContent = 'Lats';
+                muscleType.innerHTML = 'Lats';
                 break;
             case 'right-lats':
-                muscleType.textContent = 'Lats';
+                muscleType.innerHTML = 'Lats';
                 break;
             case 'back-delt-a':
-                muscleType.textContent = 'Shoulders';
+            muscleType.innerHTML = 'Shoulders';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Seated Dumbell Shoulder Press";
+                a.href = "https://youtu.be/0JfYxMRsUCQ";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Side Lateral Raise";
+                a.href = "https://youtu.be/3VcKaXpzqRo?t=15";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout3');
+                a.innerHTML = "Dumbell Bent-Over Raise";
+                a.href = "https://youtu.be/ttvfGg9d76c?t=10";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout4');
+                a.innerHTML = "Arnold Press";
+                a.href = "https://youtu.be/3ml7BH7mNwQ";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
                 break;
             case 'back-delt-b':
-                muscleType.textContent = 'Shoulders';
+            muscleType.innerHTML = 'Shoulders';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Seated Dumbell Shoulder Press";
+                a.href = "https://youtu.be/0JfYxMRsUCQ";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Side Lateral Raise";
+                a.href = "https://youtu.be/3VcKaXpzqRo?t=15";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout3');
+                a.innerHTML = "Dumbell Bent-Over Raise";
+                a.href = "https://youtu.be/ttvfGg9d76c?t=10";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout4');
+                a.innerHTML = "Arnold Press";
+                a.href = "https://youtu.be/3ml7BH7mNwQ";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
                 break;
             case 'left-tricep':
-                muscleType.textContent = 'Triceps';
+                muscleType.innerHTML = 'Triceps';
                 break;
             case 'right-tricep':
-                muscleType.textContent = 'Triceps';
+                muscleType.innerHTML = 'Triceps';
                 break;
             case 'back-forearm-a':
-                muscleType.textContent = 'Forearms';
+                muscleType.innerHTML = 'Forearms';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Farmers Walk";
+                a.href = "ttps://youtu.be/Fkzk_RqlYig";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Wrist Curls";
+                a.href = "https://youtu.be/qMtmHwaCmYI?t=10";
+                a.target = '_blank';
                 break;
             case 'back-forearm-b':
-                muscleType.textContent = 'Forearms';
+                muscleType.innerHTML = 'Forearms';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Farmers Walk";
+                a.href = "ttps://youtu.be/Fkzk_RqlYig";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Wrist Curls";
+                a.href = "https://youtu.be/qMtmHwaCmYI?t=10";
+                a.target = '_blank';
                 break;
             case 'glutes':
-                muscleType.textContent = 'Glutes';
+                muscleType.innerHTML = 'Glutes';
                 break;
             case 'left-hamstring':
-                muscleType.textContent = 'Hamstring';
+                muscleType.innerHTML = 'Hamstring';
                 break;
             case 'right-hamstring':
-                muscleType.textContent = 'Hamstring';
+                muscleType.innerHTML = 'Hamstring';
                 break;
             case 'back-calf-a':
-                muscleType.textContent = 'Calves';
+                muscleType.innerHTML = 'Calves';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Standing Calf Raises";
+                a.href = "https://youtu.be/YMmgqO8Jo-k?t=15";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Seated Calf Raises";
+                a.href = "https://youtu.be/E4ktXrJZUMg";
+                a.target = '_blank';
                 break;
             case 'back-calf-b':
-                muscleType.textContent = 'Calves';
-                break;
-                    
+                muscleType.innerHTML = 'Calves';
+                a = document.getElementById('workout1');
+                a.innerHTML = "Standing Calf Raises";
+                a.href = "https://youtu.be/YMmgqO8Jo-k?t=15";
+                a.target = '_blank';
+                linebreak = document.createElement("br");
+                a.appendChild(linebreak);
+                a = document.getElementById('workout2');
+                a.innerHTML = "Seated Calf Raises";
+                a.href = "https://youtu.be/E4ktXrJZUMg";
+                a.target = '_blank';
+                break;        
           }
         }
         
@@ -195,6 +495,6 @@
             modal.style.display = "none";
           }
         }
-        </script>
+    </script>
 </body>
 </html>
