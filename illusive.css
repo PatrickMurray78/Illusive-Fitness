@@ -29,22 +29,15 @@ header {
     text-align: center;
 }
 
-#illusiveheader {
-    color: white;
-    font-weight: bolder;
-}
-
-#fitnessheader {
-    color: red;
-    font-weight: lighter;
-    font-size: smaller;
+#logo {
+    height: 5vh;
 }
 
 #support {
     color: white;
     position: relative;
     font-weight: lighter;
-    top: -3vh;
+    top: -4vh;
     width: 5%;
     left: 80vw;
 }

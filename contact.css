@@ -40,15 +40,8 @@
     text-align: center;
 }
 
-#illusiveheader {
-    color: white;
-    font-weight: bolder;
-}
-
-#fitnessheader {
-    color: red;
-    font-weight: lighter;
-    font-size: smaller;
+#logo {
+  height: 5vh;
 }
 
 #support {
